@@ -55,32 +55,7 @@ df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
 df = df.drop_duplicates()
 
 df.to_csv("cleaned_ecommerce_data.csv", index=False)
-SQL Analysis Examples
-Total Revenue
-SELECT SUM(Revenue) AS total_revenue
-FROM ecommerce_project_transactions;
-Top Selling Products
-SELECT Description,
-       SUM(Revenue) AS total_revenue
-FROM ecommerce_project_transactions
-GROUP BY Description
-ORDER BY total_revenue DESC
-LIMIT 10;
-Revenue by Country
-SELECT Country,
-       SUM(Revenue) AS total_revenue
-FROM ecommerce_project_transactions
-GROUP BY Country
-ORDER BY total_revenue DESC;
-Monthly Revenue Trend
-SELECT
-    YEAR(InvoiceDate) AS year,
-    MONTH(InvoiceDate) AS month,
-    SUM(Revenue) AS monthly_revenue
-FROM ecommerce_project_transactions
-GROUP BY YEAR(InvoiceDate), MONTH(InvoiceDate)
-ORDER BY year, month;
-Power BI Dashboard Features
+
 
 The interactive dashboard provides insights such as:
 
