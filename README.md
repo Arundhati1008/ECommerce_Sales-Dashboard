@@ -1,4 +1,4 @@
-📊 E-Commerce Sales Performance Analysis
+📊 Revenue Intelligence and sales prformance dashboard
 Overview
 
 This project analyzes an e-commerce transaction dataset to understand sales performance, product contribution, customer behavior, and geographic revenue distribution.
